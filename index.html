@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Conversion</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="mainDiv">
+        <h3 class="header">JS-Conversion</h3>
+    
+        <form action="#" method="#">
+    
+            <div class="fields">
+                <span>Choose Shape:</span>
+                <select name="shapes" id="shapes" onchange="getShape()">
+                    <option value="" selected disabled>...</option>
+                    <option value="Square">Square/Squarebox</option>
+                    <option value="Triangle">Triangle</option>
+                    <option value="Circle">Circle/Cylinder</option>
+                        <!-- <option value="Rectangle">Rectangle</option> -->
+                        <!-- <option value="Eclipse">Eclipse</option> -->
+                </select>
+            </div>
+    
+            <div id="firstInput" class="fields">
+                <label for="input1" id="input1label">Given number:</label>
+                <input type="number" id="input1">
+            </div>
+    
+            <div id="secondInput" class="fields">
+                <label for="input2" id="input2label">Given number:</label>
+                <input type="number" id="input2">
+            </div>
+    
+            <div id="thirdInput" class="fields">
+                <label for="input3" id="input3label">Given number:</label>
+                <input type="number" id="input3">
+            </div>
+    
+            <div class="btnDiv">
+                <input type="button" class="btn" onclick="getOutput()" value="Compute">
+            </div>
+    
+        </form>
+
+            <div class="OutputRow">
+                <div id="displayUnit1" class="col1">Area</div>
+                <div id="displayArea" class="col2">--</div>
+                <div id="areaFormula" class="col3">--</div>
+            </div>
+            <div class="OutputRow">
+                <div id="displayUnit2" class="col1">Perimeter</div>
+                <div id="displayPerimeter" class="col2">--</div>
+                <div id="perimeterFormula" class="col3">--</div>
+            </div>
+            <div class="OutputRow">
+                <div id="displayUnit3" class="col1">Volume</div>
+                <div id="displayVolume" class="col2">--</div>
+                <div id="volumeFormula" class="col3">--</div>
+            </div>
+
+    </div>
+    
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
